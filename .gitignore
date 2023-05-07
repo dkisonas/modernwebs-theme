@@ -17,8 +17,9 @@ blocks/*/node_modules/
 *.zip
 
 # Ignore block source code and git repositories
-blocks/*/src/
-blocks/*/.git/
+src/blocks/*/src/
+src/components/
+src/blocks/*/.git/
 
 # Ignore IDE files and directories
 .idea/

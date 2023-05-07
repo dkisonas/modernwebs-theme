@@ -1,0 +1,5 @@
+/* Define your own custom styles */
+/* Example styles for the block editor */
+.editor-styles-wrapper {
+  @apply bg-gray-100 p-4;
+}
