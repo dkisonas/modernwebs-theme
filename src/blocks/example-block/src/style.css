@@ -1,0 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.my-block {
+	@apply bg-gray-100 p-4 rounded-md shadow-md;
+}
