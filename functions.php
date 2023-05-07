@@ -22,12 +22,12 @@ function mytheme_enqueue_block_assets() {
       }
 
       // Enqueue block CSS file
-      if (file_exists($block_path . '/style.css')) {
+      if (file_exists($block_path . '/style-index.css')) {
         wp_enqueue_style(
           'mytheme-' . $block . '-block-style',
-          get_template_directory_uri() . '/src/blocks/' . $block . '/build/style.css',
+          get_template_directory_uri() . '/src/blocks/' . $block . '/build/style-index.css',
           array(),
-          filemtime($block_path . '/style.css')
+          filemtime($block_path . '/style-index.css')
         );
       }
     }

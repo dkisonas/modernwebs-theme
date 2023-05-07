@@ -31,8 +31,11 @@ import "./style.css";
  */
 export default function Edit() {
 	return (
-		<p {...useBlockProps()}>
-			{__("Example Block – hello from the editor!", "example-block")}
-		</p>
+		<>
+			<p className="my-block" {...useBlockProps()}>
+				<h1 className="text-red-600 p-6 bg-blue-300 rounded-sm">cbb</h1>
+				{__("Example Block – hello from the editor!", "example-block")}
+			</p>
+		</>
 	);
 }
