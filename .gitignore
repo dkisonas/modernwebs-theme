@@ -1,53 +1,24 @@
-# .gitignore
+# Node.js dependencies
+/node_modules
 
-# Ignore system files
+# Gutenberg block dependencies
+/src/blocks/*/node_modules
+/src/blocks/*/package-lock.json
+
+# Gutenberg block build files
+/src/blocks/*/build
+
+# Custom theme built files
+/style.css.map
+
+# OS and editor generated files
 .DS_Store
 Thumbs.db
-Desktop.ini
-
-# Ignore node_modules and installed packages
-node_modules/
-blocks/*/node_modules/
-/package-lock.json
-/yarn.lock
-
-# Do not ignore build artifacts and generated files
-# blocks/*/build/
 *.log
-*.zip
-
-# Ignore block source code and git repositories
-src/blocks/*/.git/
-
-# Ignore IDE files and directories
-.idea/
-*.iml
+*.bak
+*.swp
+*.swo
+*.tmp
 *.sublime-*
+*.idea/
 .vscode/
-*.code-workspace
-*.swp
-*.swo
-
-# Ignore log files
-*.swo
-*.swp
-
-# Ignore Sass and Less cache files
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
-*.less.map
-*.rtl.css
-
-# Ignore Composer and PHP-related files
-/vendor
-/composer.lock
-*.phar
-
-# Ignore other files and directories commonly found in WordPress projects
-bower_components/
-npm-debug.log
-.htaccess
-php_errorlog
-php.ini
